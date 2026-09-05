@@ -1,0 +1,65 @@
+#sign-in-container {
+    width: 100%;
+     
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    width: 570px; /* ou o valor que preferir */
+    max-width: 90%; /* evita que "estoure" em celulares */
+    box-sizing: border-box;
+    padding: 60px;
+    border-radius: 20px;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.custom-input {
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+}
+
+.custom-button {
+    background-color: #e50914;
+    border: none;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.custom-button:hover {
+    background-color: #f40612;
+}
+
+.forgot-password {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+.forgot-password:hover {
+    text-decoration: underline !important;
+}
+
+.new-here {
+    font-size: 1rem;
+}
+
+.new-here a {
+    color: #e50914 !important;
+}
+
+.new-here a:hover {
+    text-decoration: underline !important;
+}
+
