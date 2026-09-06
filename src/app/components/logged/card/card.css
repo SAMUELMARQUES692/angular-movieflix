@@ -1,0 +1,90 @@
+.movie-card {
+    background-color: #151515;
+    border-radius: 20px;
+    width: 340px;
+    padding: 24px;
+    position: relative;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .top-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 52px;
+    background-color: #d9433c;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    border-top-right-radius: 20px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 22% 100%, 0% 62%);
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .movie-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    padding-right: 40px;
+  }
+  
+  .movie-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #9a9a9a;
+    margin: 0;
+  }
+  
+  .movie-info {
+    margin-top: 4px;
+  }
+  
+  .duration,
+  .age-rating,
+  .rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+  }
+  
+  .duration i,
+  .age-rating i,
+  .rating i {
+    color: #d9433c;
+    font-size: 14px;
+  }
+  
+  .provider {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .provider-logo {
+    width: 90px;
+    height: 40px;
+    background-color: #151515;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;   /* aumenta/diminui esse % até a logo preencher bem */
+  }
