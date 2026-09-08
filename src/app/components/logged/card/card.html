@@ -11,17 +11,18 @@
         <div class="movie-info">
             <div class="d-flex align-items-center gap-3">
                 <span class="duration">
-                    <i class="bi bi-clock"></i>{{ duration }}
+                    <span class="info-emoji">⏱️</span>{{ duration }}
                 </span>
 
                 <span class="age-rating">
-                    <i class="bi bi-badge-18k"></i>{{ ageRating }}
+                    <span class="age-emoji">🔞</span>{{ ageRating }}
                 </span>
-            </div>
-
-            <div class="rating">
-                <i class="bi bi-hand-thumbs-up-fill"></i>
-                {{ approvalRating }}% Aprovação
+                <div class="rating">
+                <div class="rating" [ngClass]="getRatingClass()">
+                    <span class="info-emoji">👍</span>
+                    {{ approvalRating }}% Aprovação
+                </div>
+                </div>
             </div>
 
             <div class="provider mt-2">

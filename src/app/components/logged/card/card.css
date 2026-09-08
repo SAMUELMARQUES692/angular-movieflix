@@ -1,7 +1,7 @@
 .movie-card {
-    background-color: #151515;
+    background: linear-gradient(to top, #373636, rgb(72 72 72 / 70%));
     border-radius: 20px;
-    width: 340px;
+    width: 400px;
     padding: 24px;
     position: relative;
     color: #ffffff;
@@ -82,9 +82,40 @@
   .provider-logo {
     width: 90px;
     height: 40px;
-    background-color: #151515;
+    background-color: #373636;
     border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 65%;   /* aumenta/diminui esse % até a logo preencher bem */
+  }
+
+  .age-emoji {
+    font-size: 13px;
+    margin-right: 4px;
+    line-height: 1;
+  }
+
+  .info-emoji {
+    font-size: 13px;
+    margin-right: 4px;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  
+  .duration,
+  .age-rating,
+  .rating {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .rating-good {
+    color: #46d369;
+  }
+
+  .rating-bad {
+    color: #e50914;
   }
