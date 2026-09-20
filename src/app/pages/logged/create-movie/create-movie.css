@@ -104,3 +104,18 @@ input[type="date"].custom-input {
     min-height: 100vh;
     justify-content: center;
 }
+
+.btn-voltar {
+    background-color: transparent;
+    border: 1px solid #f40612;
+    color: #fff;
+    border-radius: 4px;
+    padding: 16px;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  
+  .btn-voltar:hover {
+    background-color: #f40612;
+    color: #fff;
+  }

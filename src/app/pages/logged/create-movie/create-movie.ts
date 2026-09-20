@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 export interface Movie {
   name: string;
@@ -12,7 +13,7 @@ export interface Movie {
 }
 
 @Component({
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   selector: 'app-create-movie',
   styleUrl: './create-movie.css',
   templateUrl: './create-movie.html',
