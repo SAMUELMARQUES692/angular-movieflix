@@ -1,49 +1,70 @@
+:host {
+  display: block;
+}
+
 .movie-card {
-    background: linear-gradient(to top, #373636, rgb(72 72 72 / 70%));
-    border-radius: 20px;
-    width: 400px;
-    padding: 24px;
-    position: relative;
-    color: #ffffff;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    overflow: hidden;
-  }
+  background: linear-gradient(to top, #373636, rgb(72 72 72 / 70%));
+  border-radius: 5px;
+  width: 100%;
+  aspect-ratio: 4 / 3;      /* deixa o card quadrado */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  position: relative;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  overflow: hidden;
+}
   
-  .top-tag {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 52px;
-    background-color: #d9433c;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    padding-top: 6px;
-    font-size: 12px;
-    font-weight: 800;
-    line-height: 1.3;
-    letter-spacing: 0.5px;
-    border-top-right-radius: 20px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 22% 100%, 0% 62%);
-  }
-  
+.top-tag {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 44px;
+  padding: 8px 0 16px;
+  background: linear-gradient(180deg, #ff4b4b 0%, #b20710 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* recorte em "V" na parte de baixo, estilo marcador */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+  transition: padding 0.2s ease;
+}
+
+.top-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+.top-number {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* o marcador "desce" um pouco ao passar o mouse no card */
+.movie-card:hover .top-tag {
+  padding-bottom: 22px;
+}
+
   .card-content {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    flex: 1;
   }
   
   .movie-title {
     font-size: 22px;
     font-weight: 700;
     margin: 0;
-    padding-right: 40px;
-  }
-  
+    padding-right: 70px;   /* era 40px */
+}
+
   .movie-description {
     font-size: 14px;
     line-height: 1.5;

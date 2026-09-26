@@ -1,5 +1,8 @@
 <div class="movie-card">
-    <div class="top-tag" *ngIf="isTop10">TOP 10</div>
+    <div class="top-tag" *ngIf="isTop10">
+        <span class="top-label">TOP</span>
+        <span class="top-number">10</span>
+    </div>
 
     <div class="card-content">
         <h2 class="movie-title">{{ title }}</h2>
@@ -9,7 +12,7 @@
         </p>
 
         <div class="movie-info">
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center flex-wrap gap-3">
                 <span class="duration">
                     <span class="info-emoji">⏱️</span>{{ duration }}
                 </span>
@@ -17,11 +20,10 @@
                 <span class="age-rating">
                     <span class="age-emoji">🔞</span>{{ ageRating }}
                 </span>
-                <div class="rating">
+
                 <div class="rating" [ngClass]="getRatingClass()">
                     <span class="info-emoji">👍</span>
                     {{ approvalRating }}% Aprovação
-                </div>
                 </div>
             </div>
 

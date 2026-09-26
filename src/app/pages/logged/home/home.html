@@ -3,14 +3,16 @@
 <section class="movie-row">
 
     <div class="movie-row-cards">
-        <app-card
-            title="O Poderoso Chefão"
-            description="Don Corleone, chefe da máfia, precisa passar o legado para seu filho Michael, que reluta em assumir os negócios da família."
-            duration="1:30h"
-            ageRating="Somente +18"
-            [approvalRating]="67"
-            providerLogo="/img/patrocinadores/netflix-logo.webp"
-            [isTop10]="true"
-        />
+        @for (movie of movies; track movie.title) {
+            <app-card
+                [title]="movie.title"
+                [description]="movie.description"
+                [duration]="movie.duration"
+                [ageRating]="movie.ageRating"
+                [approvalRating]="movie.approvalRating"
+                [providerLogo]="movie.providerLogo"
+                [isTop10]="movie.isTop10"
+            />
+        }
     </div>
 </section>

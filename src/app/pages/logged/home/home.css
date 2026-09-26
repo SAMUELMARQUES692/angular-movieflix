@@ -1,0 +1,25 @@
+.movie-row-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1400px;   /* largura máxima da área dos cards */
+    margin: 0 auto;      /* centraliza na tela */
+}
+.movie-row-cards app-card {
+    display: block;
+    min-width: 0;
+}
+
+/* telas menores: 3, 2 e 1 por linha */
+@media (max-width: 1280px) {
+    .movie-row-cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 900px) {
+    .movie-row-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+    .movie-row-cards { grid-template-columns: 1fr; }
+}
